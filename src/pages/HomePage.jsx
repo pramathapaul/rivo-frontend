@@ -100,7 +100,7 @@ const HomePage = () => {
 
   const stats = [
     { label: 'Products', value: '200+', icon: 'inventory' },
-    { label: 'Customers', value: '5000+', icon: 'group' },
+    { label: 'Customers', value: '100+', icon: 'group' },
     { label: 'Designs', value: '1000+', icon: 'palette' },
     { label: 'Rating', value: '4.9', icon: 'star' }
   ]
