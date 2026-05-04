@@ -8,6 +8,7 @@ import OrdersManager from './OrdersManager'
 import UsersManager from './UsersManager'
 import AnalyticsPage from './AnalyticsPage'
 import CouponManager from './CouponManager'
+import AnnouncementsManager from './AnnouncementsManager'
 
 const AdminDashboard = () => {
   const navigate = useNavigate()
@@ -49,6 +50,7 @@ const AdminDashboard = () => {
     { path: '/admin/orders', label: 'Orders', icon: 'shopping_cart' },
     { path: '/admin/users', label: 'Users', icon: 'group' },
     { path: '/admin/coupons', label: 'Coupons', icon: 'confirmation_number' },
+    { path: '/admin/announcements', label: 'Announcements', icon: 'campaign' },
     { path: '/admin/analytics', label: 'Analytics', icon: 'analytics' }
   ]
 
@@ -113,6 +115,7 @@ const AdminDashboard = () => {
             <Route path="/users" element={<UsersManager />} />
             <Route path="/coupons" element={<CouponManager />} />
             <Route path="/analytics" element={<AnalyticsPage stats={stats} />} />
+            <Route path="/announcements" element={<AnnouncementsManager />} />
           </Routes>
         </div>
       </div>
