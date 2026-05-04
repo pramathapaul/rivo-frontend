@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
+import AnnouncementBar from './components/AnnouncementBar'
 import Navbar from './components/Navbar'
 import MobileBottomNav from './components/MobileBottomNav'
 import HomePage from './pages/HomePage'
@@ -26,6 +27,7 @@ function App() {
           <Route path="*" element={
             <div className="min-h-screen flex flex-col bg-surface">
               <Navbar />
+              <AnnouncementBar />
               <main className="flex-grow pb-16 md:pb-0">
                 <Routes>
                   <Route path="/" element={<HomePage />} />
