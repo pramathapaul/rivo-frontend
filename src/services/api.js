@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'https://rivo-backend-e1nl.onrender.com/api'
+const API_URL = 'http://localhost:5000/api'
 
 const api = axios.create({
   baseURL: API_URL,
